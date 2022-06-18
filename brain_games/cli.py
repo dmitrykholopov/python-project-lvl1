@@ -1,7 +1,10 @@
-import prompt
+"""Add a docstring for a public module."""
+
+from prompt import string
 
 
 def welcome_user():
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+    """Add function, that ask name & welcomes user."""
+    name = string('May I have your name? ')
+    print('Hello ', name, '!')
     return name

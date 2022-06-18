@@ -1,9 +1,16 @@
-#!/usr/bin/env python
-import brain_games.cli
+
+"""Make a docstring for a public module."""
+
+# !/usr/bin/env python
+
+
+from brain_games import cli
+
 
 def main():
+    """Add function welcomes user."""
     print('Welcome to the Brain Games!')
-    brain_games.cli.welcome_user()
+    cli.welcome_user()
 
 
 if __name__ == '__main__':
