@@ -16,7 +16,7 @@ def welcome_user():
 
 
 def compare_answer_calc(right_answer, answer):
-    if right_answer ==  int(answer):
+    if right_answer ==  answer:
         print('Correct!')
         return True
     else:
@@ -40,13 +40,13 @@ def is_right_calculated():
         print('Question: ', end='')
         if operator == '-':
             print(random_number, '-', random_number2)
-            right_answer = random_number - random_number2
+            right_answer = str(random_number - random_number2)
         elif operator == '+':
             print(random_number, '+', random_number2)
-            right_answer = random_number + random_number2
+            right_answer = str(random_number + random_number2)
         elif operator == '*':
             print(random_number, '*', random_number2)
-            right_answer = random_number * random_number2
+            right_answer = str(random_number * random_number2)
         print('Your answer: ', end='')
         answer = input()
         if compare_answer_calc(right_answer, answer):

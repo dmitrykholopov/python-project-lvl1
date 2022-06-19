@@ -15,26 +15,6 @@ def welcome_user():
     return print('Hello, ', name, '!')
 
 
-# def compare_answer_first(random_number, answer):
-#     if (
-#             (random_number % 2 == 0 and answer == 'yes')
-#             or (random_number % 2 != 0 and answer == 'no')
-#         ):
-#             print('Correct!')
-#             return True
-#     elif (
-#             (random_number % 2 == 0 and answer != 'yes')
-#             or (random_number % 2 != 0 and answer != 'no')
-#         ):
-#             print(
-#                 "'", answer, "'",
-#                 ' is wrong answer ;(. Correct answer was ',
-#                 "'", random_number, "'.", sep=''
-#             )
-#             print("Let's try again, ", name, '!', sep='')
-#             return False
-
-
 def compare_answer_even(random_number, answer):
     if random_number % 2 == 0 and answer == 'yes':
         print('Correct!')
