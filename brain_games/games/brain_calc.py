@@ -1,58 +1,36 @@
 """Make a docstring for a public module."""
 
-# !/usr/bin/env python
+#!/usr/bin/env python3
 
 
-#   from prompt import string
 from random import randint, choice
-from prompt import string
-
-
-def welcome_user():
-    """Add function, that ask name & welcomes user."""
-    global name
-    name = string('May I have your name? ')
-    return print('Hello, ', name, '!')
-
-
-def compare_answer_calc(right_answer, answer):
-    if right_answer ==  answer:
-        print('Correct!')
-        return True
-    else:
-        print(
-            "'", answer, "'",
-            ' is wrong answer ;(. Correct answer was ',
-            "'", right_answer, "'.", sep=''
-        )
-        print("Let's try again, ", name, '!', sep='')
-        return False
+from brain_games.games.base_functions import welcome_user, compare_answer
 
 
 def is_right_calculated():
     """Add main function with game logic."""
-    welcome_user()
+    name = welcome_user()
     print('What is the result of the expression?')
     for _ in range(3):
-        random_number = randint(1, 20)
-        random_number2 = randint(1, 20)
+        operand1 = randint(1, 20)
+        operand2 = randint(1, 20)
         operator = choice('-+*-+*-+*-+*-+*-+*')
         print('Question: ', end='')
         if operator == '-':
-            print(random_number, '-', random_number2)
-            right_answer = str(random_number - random_number2)
+            print(operand1, '-', operand2)
+            right_answer = str(operand1 - operand2)
         elif operator == '+':
-            print(random_number, '+', random_number2)
-            right_answer = str(random_number + random_number2)
+            print(operand1, '+', operand2)
+            right_answer = str(operand1 + operand2)
         elif operator == '*':
-            print(random_number, '*', random_number2)
-            right_answer = str(random_number * random_number2)
+            print(operand1, '*', operand2)
+            right_answer = str(operand1 * operand2)
         print('Your answer: ', end='')
         answer = input()
-        if compare_answer_calc(right_answer, answer):
+        if compare_answer(right_answer, answer, name):
             continue
         else:
-            return False
+            return
     print('Congratulations, ', name, '!', sep='')
 
 

@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 ### asciinema brain-even record:
 [![asciicast](https://asciinema.org/a/VEeLbIFlERpxXzjskPkDOB5S4.svg)](https://asciinema.org/a/VEeLbIFlERpxXzjskPkDOB5S4)
+### asciinema brain-calc + brain-even record:
+[![asciicast](https://asciinema.org/a/aNe0a0c2sadZysvNb3zzh0Jst.svg)](https://asciinema.org/a/aNe0a0c2sadZysvNb3zzh0Jst)

@@ -19,6 +19,7 @@ flake8 = "^4.0.1"
 brain-games = "brain_games.games.brain_games:main"
 brain-even = "brain_games.games.brain_even:main"
 brain-calc = "brain_games.games.brain_calc:main"
+brain-base-functions = "brain_games.games.base_functions:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
