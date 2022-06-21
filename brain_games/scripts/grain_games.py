@@ -1,18 +1,17 @@
+
 """Make a docstring for a public module."""
 
 #!/usr/bin/env python3
 
 
-from calc import is_right_calculated
+from brain_games import cli
 
 
 def main():
-    """Add function presents the game."""
+    """Add function welcomes user."""
     print('Welcome to the Brain Games!')
-    is_right_calculated()
+    cli.welcome_user()
 
 
 if __name__ == '__main__':
     main()
-
-print(locals())
