@@ -3,7 +3,6 @@
 
 #!/usr/bin/env python3
 
-from random import randint
 from brain_games.games.even import is_even
 
 

@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.0"
+version = "0.1.6"
 description = "Hexlet First Project"
 authors = ["Dmitry Kholopov <dkholopov@yandex.ru>"]
 packages = [
-    { include = "brain_games/games/*.py" }
+    { include = "brain_games/games/*.py" },
+    { include = "brain_games/scripts/*.py" },
 ]
 
 [tool.poetry.dependencies]
@@ -16,10 +17,9 @@ prompt = "^0.4.1"
 flake8 = "^4.0.1"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+brain-games = "brain_games.scripts.grain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
-brain-base-functions = "brain_games.games.base_functions:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

@@ -4,7 +4,7 @@
 
 
 from random import randint, choice
-from base_functions import welcome_user, compare_answer
+from .base_functions import welcome_user, compare_answer
 
 
 def is_right_calculated():
@@ -32,5 +32,3 @@ def is_right_calculated():
         else:
             return
     print('Congratulations, ', name, '!', sep='')
-
-print(locals())

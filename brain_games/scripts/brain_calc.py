@@ -1,16 +1,14 @@
-
 """Make a docstring for a public module."""
 
 #!/usr/bin/env python3
 
-
-from brain_games.games.base_functions import welcome_user
+from brain_games.games.calc import is_right_calculated
 
 
 def main():
-    """Add function welcomes user."""
+    """Add function presents the game."""
     print('Welcome to the Brain Games!')
-    welcome_user()
+    is_right_calculated()
 
 
 if __name__ == '__main__':

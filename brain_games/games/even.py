@@ -3,7 +3,7 @@
 #!/usr/bin/env python3
 
 from random import randint
-from base_functions import welcome_user, compare_answer
+from .base_functions import welcome_user, compare_answer
 
 
 def is_even():
@@ -24,5 +24,3 @@ def is_even():
         else:
             return
     print('Congratulations, ', name, '!', sep='')
-
-print(locals())
