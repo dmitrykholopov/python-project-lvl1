@@ -2,8 +2,9 @@
 
 #!/usr/bin/env python3
 
+
 from random import randint
-from .base_functions import welcome_user, compare_answer
+from brain_games.games.base_functions import welcome_user, compare_answer
 
 
 def is_even():

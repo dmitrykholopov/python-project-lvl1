@@ -4,7 +4,7 @@
 
 
 from random import randint, choice
-from .base_functions import welcome_user, compare_answer
+from brain_games.games.base_functions import welcome_user, compare_answer
 
 
 def is_right_calculated():
