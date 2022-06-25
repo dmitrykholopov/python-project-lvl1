@@ -13,7 +13,7 @@ def is_even():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     for _ in range(3):
         random_number = randint(1, 20)
-        print('Question: ', random_number)
+        print('Question:', random_number)
         print('Your answer: ', end='')
         answer = input()
         if random_number % 2 == 0:
