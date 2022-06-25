@@ -1,6 +1,6 @@
 """Make a docstring for a public module."""
 
-#!/usr/bin/env python3
+# !/usr/bin/env python3
 
 from brain_games.games.calc import is_right_calculated
 
