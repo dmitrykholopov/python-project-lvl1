@@ -3,7 +3,7 @@
 ### Codeclimate maintainability status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 ### asciinema brain-even record:
-[![asciicast](https://asciinema.org/a/VEeLbIFlERpxXzjskPkDOB5S4.svg)](https://asciinema.org/a/VEeLbIFlERpxXzjskPkDOB5S4)
+[![asciicast](https://asciinema.org/a/XNfR1CfUySMu1JwQOHm08SaP0.svg)](https://asciinema.org/a/XNfR1CfUySMu1JwQOHm08SaP0)
 ### asciinema brain-calc record:
 [![asciicast](https://asciinema.org/a/YQG1lg7dMlDVzcrabkbKfqEKQ.svg)](https://asciinema.org/a/YQG1lg7dMlDVzcrabkbKfqEKQ)
 ### asciinema brain-gcd record:
