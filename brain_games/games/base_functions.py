@@ -26,3 +26,12 @@ def compare_answer(right_answer, answer, name):
         )
         print("Let's try again, ", name, '!', sep='')
         return False
+
+
+def is_prime_number(number):
+    if number == 1:
+        return 'no'
+    for i in range(1, 1 + number // 2):
+        if number % i == 0 and i != 1:
+            return 'no'
+    return 'yes'

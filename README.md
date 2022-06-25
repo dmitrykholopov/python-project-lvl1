@@ -10,3 +10,5 @@
 [![asciicast](https://asciinema.org/a/WppyZrpo3uphGy3vmFKVn5znF.svg)](https://asciinema.org/a/WppyZrpo3uphGy3vmFKVn5znF)
 ### asciinema brain-progression record:
 [![asciicast](https://asciinema.org/a/H9t4lQS9cNVgBOXy4bdqfebzg.svg)](https://asciinema.org/a/H9t4lQS9cNVgBOXy4bdqfebzg)
+### asciinema brain-prime record:
+[![asciicast](https://asciinema.org/a/AjeZXypSnV0wBHuQ8mkr7kEkl.svg)](https://asciinema.org/a/AjeZXypSnV0wBHuQ8mkr7kEkl)
