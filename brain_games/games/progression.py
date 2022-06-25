@@ -21,7 +21,7 @@ def arithmetic_progressoin():
         hidden_element = randint(0, len(generated_progression) - 1)
         right_answer = str(generated_progression.pop(hidden_element))
         generated_progression.insert(hidden_element, '..')
-        print('Question: ', *generated_progression)
+        print('Question:', *generated_progression)
         print('Your answer: ', end='')
         answer = input()
         if compare_answer(right_answer, answer, name):
