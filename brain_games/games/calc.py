@@ -15,7 +15,7 @@ def is_right_calculated():
         operand1 = randint(1, 20)
         operand2 = randint(1, 20)
         operator = choice('-+*-+*-+*-+*-+*-+*')
-        print('Question: ', end='')
+        print('Question:', end='')
         if operator == '-':
             print(operand1, '-', operand2)
             right_answer = str(operand1 - operand2)

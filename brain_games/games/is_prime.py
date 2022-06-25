@@ -14,7 +14,7 @@ def prime():
     print('Answer "yes" if the number is prime, otherwise answer "no".')
     for _ in range(3):
         random_number = randint(1, 50)
-        print('Question: ', random_number)
+        print('Question:', random_number)
         print('Your answer: ', end='')
         answer = input()
         if compare_answer(is_prime_number(random_number), answer, name):
