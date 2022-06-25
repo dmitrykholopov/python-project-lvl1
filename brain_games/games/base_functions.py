@@ -26,5 +26,3 @@ def compare_answer(right_answer, answer, name):
         )
         print("Let's try again, ", name, '!', sep='')
         return False
-
-S = 'this is BASE_FUNCTIONS!'

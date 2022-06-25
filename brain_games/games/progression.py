@@ -7,25 +7,21 @@ from random import randint
 from brain_games.games.base_functions import welcome_user, compare_answer
 
 
-def nod():
+def arithmetic_progressoin():
     """Add main function with game logic."""
     name = welcome_user()
     print('Find the greatest common divisor of given numbers.')
     for _ in range(3):
-        right_answer = 1
-        number1 = randint(1, 100)
-        number2 = randint(1, 100)
-        print('Question:', number1, number2)
-        if number1 == number2:
-            right_answer = number1
-        elif number1 > number2:
-            number1, number2 = number2, number1
-        if number1 < number2:
-            for i in range(number1, 1, -1):
-                if number2 % i == 0 and number1 % i == 0:
-                    right_answer = i
-                    break
-        right_answer = str(right_answer)
+        d = 0
+        cutting_elements = randint(5, 10)
+        while d == 0:
+            d = randint(-5, 5)
+        generated_progression = [i * d for i in range(1, 16)]
+        generated_progression = generated_progression[cutting_elements:]
+        hidden_element = randint(0, len(generated_progression) - 1)
+        right_answer = str(generated_progression.pop(hidden_element))
+        generated_progression.insert(hidden_element, '..')
+        print('Question: ', *generated_progression)
         print('Your answer: ', end='')
         answer = input()
         if compare_answer(right_answer, answer, name):
