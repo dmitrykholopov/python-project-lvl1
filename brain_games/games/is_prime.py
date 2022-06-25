@@ -4,7 +4,8 @@
 
 
 from random import randint
-from brain_games.games.base_functions import welcome_user, compare_answer, is_prime_number
+from brain_games.games.base_functions import welcome_user, compare_answer,\
+    is_prime_number
 
 
 def prime():
