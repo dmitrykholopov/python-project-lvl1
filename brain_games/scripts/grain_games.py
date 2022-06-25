@@ -1,4 +1,3 @@
-
 """Make a docstring for a public module."""
 
 # !/usr/bin/env python3
