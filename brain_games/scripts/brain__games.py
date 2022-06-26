@@ -3,7 +3,7 @@
 # !/usr/bin/env python3
 
 
-from games.base_functions import welcome_user
+from brain_games.games.base_functions import welcome_user
 
 
 def main():
