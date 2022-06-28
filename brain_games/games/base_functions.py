@@ -1,16 +1,12 @@
 """Make a docstring for a public module."""
 
-# !/usr/bin/env python3
-
-# __all__ = ['welcome_user', 'compare_answer', 'name', 'string']
-
 from prompt import string as string
 
 
 def welcome_user():
     """Add function, that ask name & welcomes user."""
     name = string('May I have your name? ')
-    print('Hello, ', name, '!', sep='')
+    print(f'Hello, {name}!')
     return name
 
 
@@ -19,16 +15,14 @@ def compare_answer(right_answer, answer, name):
         print('Correct!')
         return True
     else:
-        print(
-            "'", answer, "'",
-            ' is wrong answer ;(. Correct answer was ',
-            "'", right_answer, "'.", sep=''
-        )
-        print("Let's try again, ", name, '!', sep='')
+        print(f"'{answer}', is wrong answer ;(. "
+              f"Correct answer was '{right_answer}'."
+              )
+        print(f"Let's try again, {name}!")
         return False
 
 
-def is_prime_number(number):
+def prime_number(number):
     if number == 1:
         return 'no'
     for i in range(1, 1 + number // 2):
@@ -37,7 +31,7 @@ def is_prime_number(number):
     return 'yes'
 
 
-def is_gcd(number1, number2):
+def gcd(number1, number2):
     right_answer = 1
     if number1 == number2:
         right_answer = number1

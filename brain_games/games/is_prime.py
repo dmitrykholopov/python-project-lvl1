@@ -1,11 +1,8 @@
 """Make a docstring for a public module."""
 
-# !/usr/bin/env python3
-
-
 from random import randint
 from brain_games.games.base_functions import welcome_user, compare_answer,\
-    is_prime_number
+    prime_number
 
 
 def prime():
@@ -17,8 +14,8 @@ def prime():
         print('Question:', random_number)
         print('Your answer: ', end='')
         answer = input()
-        if compare_answer(is_prime_number(random_number), answer, name):
+        if compare_answer(prime_number(random_number), answer, name):
             continue
         else:
             return
-    print('Congratulations, ', name, '!', sep='')
+    print(f'Congratulations, {name}!')

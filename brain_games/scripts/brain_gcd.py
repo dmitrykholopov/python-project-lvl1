@@ -2,7 +2,8 @@
 
 # !/usr/bin/env python3
 
-from brain_games.games.gcd import nod
+
+from brain_games.games.is_gcd import nod
 
 
 def main():

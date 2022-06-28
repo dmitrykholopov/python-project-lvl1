@@ -3,6 +3,7 @@
 
 # !/usr/bin/env python3
 
+
 from brain_games.games.is_prime import prime
 
 
