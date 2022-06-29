@@ -43,3 +43,18 @@ def gcd(number1, number2):
                 right_answer = i
                 break
     return str(right_answer)
+
+
+def is_right_answer(game_input):
+    (question, right_answer) = game_input
+    print(f'Question: {question}')
+    print('Your answer: ', end='')
+    answer = input()
+    if right_answer == answer:
+        print('Correct!')
+        return True
+    else:
+        print(f"'{answer}', is wrong answer ;(. "
+              f"Correct answer was '{right_answer}'."
+              )
+        return False
