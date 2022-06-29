@@ -10,13 +10,13 @@ def calculator():
     operand2 = randint(1, 20)
     operator = choice('-+*-+*-+*-+*-+*-+*')
     if operator == '-':
-        question = str(operand1) + '-' + str(operand2)
+        question = str(operand1) + ' - ' + str(operand2)
         right_answer = str(operand1 - operand2)
     elif operator == '+':
-        question = str(operand1) + '+' + str(operand2)
+        question = str(operand1) + ' + ' + str(operand2)
         right_answer = str(operand1 + operand2)
     elif operator == '*':
-        question = str(operand1) + '*' + str(operand2)
+        question = str(operand1) + ' * ' + str(operand2)
         right_answer = str(operand1 * operand2)
     calculator_output = (question, right_answer)
     return calculator_output
