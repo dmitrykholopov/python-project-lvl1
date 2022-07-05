@@ -5,6 +5,7 @@
 from brain_games.games.calc import calculate, calc_game_question
 from brain_games.games.base_functions import run_game_engine
 
+
 def main():
     run_game_engine(calculate(),
                     calculate(),

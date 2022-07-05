@@ -7,6 +7,7 @@ min_operand = 1
 max_operand = 20
 calc_game_question = 'What is the result of the expression?'
 
+
 def calculate():
     operand1 = randint(min_operand, max_operand)
     operand2 = randint(min_operand, max_operand)

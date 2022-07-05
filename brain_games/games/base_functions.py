@@ -4,6 +4,7 @@ from prompt import string as string
 
 number_of_rounds = 3
 
+
 def welcome_user():
     """Add function, that ask name & welcomes user."""
     name = string('May I have your name? ')
@@ -63,14 +64,14 @@ def is_right_answer(game_input):
 
 def run_game_engine(first_round,
                     second_round,
-                    third_round, 
+                    third_round,
                     game_question_const
                     ):
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game_question_const)
     rounds = first_round + second_round + third_round
-    for i in range(0, number_of_rounds*2, 2):
+    for i in range(0, number_of_rounds * 2, 2):
         if is_right_answer(rounds[i:i + 2]):
             continue
         else:
