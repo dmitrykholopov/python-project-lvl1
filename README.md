@@ -8,9 +8,9 @@
 
 ## Packet of five mathemathic games. 
 ## 100% Python. Runs in terminal.
----------------------------------------------------------------------------------
-      Run                                Three rounds of
----------------------------------------------------------------------------------
+   
+
+Run               | Three rounds of
 
 brain-even        | Indentify if the number is EVEN & type 'yes' or 'no'.
 
