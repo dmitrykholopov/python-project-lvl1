@@ -5,11 +5,12 @@
 
 ## Instructions
 
+
+## Packet of five mathemathic games. 
+## 100% Python. Runs in terminal.
 ---------------------------------------------------------------------------------
-## Packet of five mathemathic games. 100% Python. Runs in terminal.
-------------------|--------------------------------------------------------------
- Run              |         Three rounds of
-------------------|--------------------------------------------------------------
+      Run                                Three rounds of
+---------------------------------------------------------------------------------
 
 brain-even        | Indentify if the number is EVEN & type 'yes' or 'no'.
 
@@ -21,7 +22,7 @@ brain-progression | Find missing number in arithmethic PROGRESSION and write it.
 
 brain-prime       | Indentify if the number is PRIME and type 'yes' or 'no'.
 
-------------------|--------------------------------------------------------------
+---------------------------------------------------------------------------------
 
 If you answered correctly 3 times, you won!
 
@@ -29,7 +30,7 @@ If you answered correctly 3 times, you won!
 
 Make sure you are running at least Python 3.9.13
 
-Install using poetry $ pip:
+Install using poetry & pip:
 
 clone the repository and install manually:
 
