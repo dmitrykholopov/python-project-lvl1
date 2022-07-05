@@ -2,22 +2,15 @@
 
 # !/usr/bin/env python3
 
-
-from brain_games.games.calc import calculator, calc_game_question
-from brain_games.games.base_functions import welcome_user, is_right_answer
-
+from brain_games.games.calc import calculate, calc_game_question
+from brain_games.games.base_functions import run_game_engine
 
 def main():
-    """Add function presents the game."""
-    print('Welcome to the Brain Games!')
-    name = welcome_user()
-    print(calc_game_question)
-    for _ in range(3):
-        if is_right_answer(calculator()):
-            continue
-        else:
-            return print(f"Let's try again, {name}!")
-    print(f'Congratulations, {name}!')
+    run_game_engine(calculate(),
+                    calculate(),
+                    calculate(),
+                    calc_game_question
+                    )
 
 
 if __name__ == '__main__':
