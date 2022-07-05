@@ -3,14 +3,15 @@
 ### Codeclimate maintainability status:
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
+
 ## Instructions
 
 
-## Packet of five mathemathic games. 
-## 100% Python. Runs in terminal.
+Packet of five mathemathic games. 
+100% Python. Runs in terminal.
    
 
-Run               | Three rounds of
+## Run            | Three rounds of
 
 brain-even        | Indentify if the number is EVEN & type 'yes' or 'no'.
 
@@ -57,6 +58,13 @@ brain-even
 brain-calc 
 ```
 etc.
+
+To uninstall - just run:
+
+```bash
+make package-uninstall
+```
+
 
 ## Some game DEMOS:
 
