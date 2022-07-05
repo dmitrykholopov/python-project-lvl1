@@ -9,21 +9,6 @@
 
 Packet of five mathemathic games. 
 100% Python. Runs in terminal.
-   
-
-## Run            | Three rounds of
-
-brain-even        | Indentify if the number is EVEN & type 'yes' or 'no'.
-
-brain-calc        | CALCULATE expression and write your answer.
-
-brain-gcd         | Find Common Greatest Divisor of two numbers and write it.
-
-brain-progression | Find missing number in arithmethic PROGRESSION and write it.
-
-brain-prime       | Indentify if the number is PRIME and type 'yes' or 'no'.
-
-If you answered correctly 3 times, you won!
 
 
 ## Installation
@@ -48,22 +33,42 @@ after run:
 ```bash
 make package-install
 ```
-Next - u can start the games runing commands from the Instruction section:
+Next - u can start the games runing commands:
+
+## Run            | Three rounds of
+```bash
+brain-even        
+```
+Indentify if the number is EVEN & type 'yes' or 'no'.
 
 ```bash
-brain-even
-```
+brain-calc
+```        
+CALCULATE expression and write your answer.
+
 ```bash
-brain-calc 
+brain-gcd         
 ```
-etc.
+Find Common Greatest Divisor of two numbers and write it.
+
+```bash
+brain-progression 
+```
+Find missing number in arithmethic PROGRESSION and write it.
+
+```bash
+brain-prime       
+```
+Indentify if the number is PRIME and type 'yes' or 'no'.
+
+If you answered correctly 3 times, you won!
+
 
 To uninstall - just run:
 
 ```bash
 make package-uninstall
 ```
-
 
 ## Some game process-demo:
 
