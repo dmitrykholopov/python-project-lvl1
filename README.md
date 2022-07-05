@@ -23,9 +23,8 @@ brain-progression | Find missing number in arithmethic PROGRESSION and write it.
 
 brain-prime       | Indentify if the number is PRIME and type 'yes' or 'no'.
 
----------------------------------------------------------------------------------
-
 If you answered correctly 3 times, you won!
+
 
 ## Installation
 
@@ -66,7 +65,7 @@ make package-uninstall
 ```
 
 
-## Some game DEMOS:
+## Some game process-demo:
 
 ### asciinema brain-even record:
 [![asciicast](https://asciinema.org/a/XNfR1CfUySMu1JwQOHm08SaP0.svg)](https://asciinema.org/a/XNfR1CfUySMu1JwQOHm08SaP0)
