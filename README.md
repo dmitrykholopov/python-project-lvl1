@@ -8,21 +8,28 @@
 ---------------------------------------------------------------------------------
 ## Packet of five mathemathic games. 100% Python. Runs in terminal.
 ------------------|--------------------------------------------------------------
-## Run            |       ## Three rounds of
+ Run              |         Three rounds of
 ------------------|--------------------------------------------------------------
+
 brain-even        | Indentify if the number is EVEN & type 'yes' or 'no'.
+
 brain-calc        | CALCULATE expression and write your answer.
+
 brain-gcd         | Find Common Greatest Divisor of two numbers and write it.
+
 brain-progression | Find missing number in arithmethic PROGRESSION and write it.
+
 brain-prime       | Indentify if the number is PRIME and type 'yes' or 'no'.
+
 ------------------|--------------------------------------------------------------
+
 If you answered correctly 3 times, you won!
 
 ## Installation
 
 Make sure you are running at least Python 3.9.13
 
-Install using Poetry $ pip:
+Install using poetry $ pip:
 
 clone the repository and install manually:
 
@@ -33,14 +40,14 @@ $ cd python-project-lvl1
 from package directory run:
 
 ```bash
-Make build
+make build
 ```
 after run:
 
 ```bash
-package-install
+make package-install
 ```
-After this u can start the games runing commands from the Instruction section:
+Next - u can start the games runing commands from the Instruction section:
 
 ```bash
 brain-even
