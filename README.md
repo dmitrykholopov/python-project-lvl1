@@ -64,11 +64,16 @@ Indentify if the number is PRIME and type 'yes' or 'no'.
 If you answered correctly 3 times, you won!
 
 
+
+
+
 To uninstall - just run:
 
 ```bash
 make package-uninstall
 ```
+
+
 
 ## Some game process-demo:
 
