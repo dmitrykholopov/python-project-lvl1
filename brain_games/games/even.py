@@ -1,24 +1,21 @@
 """Make a docstring for a public module."""
 
 from random import randint
-from brain_games.games.base_functions import welcome_user, compare_answer
+
+minimum_random_number = 1
+maximum_random_number = 20
+even_game_question = (
+    'Answer "yes" if the number is even, otherwise answer "no".'
+)
 
 
 def is_even():
     """Add main function with game logic."""
-    name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    for _ in range(3):
-        random_number = randint(1, 20)
-        print(f'Question: {random_number}')
-        print('Your answer: ', end='')
-        answer = input()
-        if random_number % 2 == 0:
-            right_answer = 'yes'
-        else:
-            right_answer = 'no'
-        if compare_answer(right_answer, answer, name):
-            continue
-        else:
-            return
-    print(f'Congratulations, {name}!')
+    random_number = randint(minimum_random_number, maximum_random_number)
+    question = str(random_number)
+    if random_number % 2 == 0:
+        right_answer = 'yes'
+    else:
+        right_answer = 'no'
+    even_output = question, right_answer
+    return even_output

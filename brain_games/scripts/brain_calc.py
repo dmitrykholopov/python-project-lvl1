@@ -2,7 +2,8 @@
 
 # !/usr/bin/env python3
 
-from brain_games.games.calc import calculate, calc_game_question
+from brain_games.games.calc import calc_game_question
+from brain_games.games.calc import calculate
 from brain_games.games.base_functions import run_game_engine
 
 

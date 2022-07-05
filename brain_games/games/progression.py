@@ -1,28 +1,36 @@
 """Make a docstring for a public module."""
 
 from random import randint
-from brain_games.games.base_functions import welcome_user, compare_answer
+
+maximum_generated_elements = 16     # in fact it's minus 2
+minimum_elements_cut = 5
+maximum_elements_cut = 10
+minimum_step = -5
+maximum_step = 5
+progression_game_question = (
+    'Find the greatest common divisor of given numbers.'
+)
 
 
-def arithmetic_progressoin():
-    """Add main function with game logic."""
-    name = welcome_user()
-    print('Find the greatest common divisor of given numbers.')
-    for _ in range(3):
-        d = 0
-        cutting_elements = randint(5, 10)
-        while d == 0:
-            d = randint(-5, 5)
-        generated_progression = [i * d for i in range(1, 16)]
-        generated_progression = generated_progression[cutting_elements:]
-        hidden_element = randint(0, len(generated_progression) - 1)
-        right_answer = str(generated_progression.pop(hidden_element))
-        generated_progression.insert(hidden_element, '..')
-        print('Question:', *generated_progression)
-        print('Your answer: ', end='')
-        answer = input()
-        if compare_answer(right_answer, answer, name):
-            continue
-        else:
-            return
-    print(f'Congratulations, {name}!')
+def identify_missing_number():
+    progression_step = 0
+    amount_initial_elements_cutted = randint(
+        minimum_elements_cut, maximum_elements_cut
+    )
+    while progression_step == 0:
+        progression_step = randint(minimum_step, maximum_step)
+    generated_progression = [
+        i * progression_step for i in range(1, maximum_generated_elements)
+    ]
+    generated_progression = (
+        generated_progression[amount_initial_elements_cutted:]
+    )
+    hidden_element = randint(0, len(generated_progression) - 1)
+    right_answer = str(generated_progression.pop(hidden_element))
+    generated_progression.insert(hidden_element, '..')
+    question = ''
+    for element in generated_progression:
+        question += str(element) + ' '
+    question = question.rstrip()
+    progression_output = question, right_answer
+    return progression_output

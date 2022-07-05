@@ -1,21 +1,22 @@
 """Make a docstring for a public module."""
 
 from random import randint
-from brain_games.games.base_functions import welcome_user, compare_answer,\
-    prime_number
+
+minimum_random_number = 1
+maximum_random_number = 50
+prime_game_question = (
+    'Answer "yes" if the number is prime, otherwise answer "no".'
+)
 
 
-def prime():
-    """Add main function with game logic."""
-    name = welcome_user()
-    print('Answer "yes" if the number is prime, otherwise answer "no".')
-    for _ in range(3):
-        random_number = randint(1, 50)
-        print('Question:', random_number)
-        print('Your answer: ', end='')
-        answer = input()
-        if compare_answer(prime_number(random_number), answer, name):
-            continue
-        else:
-            return
-    print(f'Congratulations, {name}!')
+def is_prime():
+    random_number = randint(minimum_random_number, maximum_random_number)
+    question = str(random_number)
+    right_answer = 'yes'
+    if random_number == 1:
+        right_answer = 'no'
+    for i in range(1, 1 + random_number // 2):
+        if random_number % i == 0 and i != 1:
+            right_answer = 'no'
+    prime_output = question, right_answer
+    return prime_output
