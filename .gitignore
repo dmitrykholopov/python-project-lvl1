@@ -1,5 +1,7 @@
 .venv
-brain_games/__pycache__
-brain_games/games/__pycache__
-brain_games/scripts/__pycache__
-brain_games/games/brain_*.*
+/dist
+/.github
+/.idea
+**/.DS_Store
+**/__pycache__
+brain_games/games/TESTING_file.py
