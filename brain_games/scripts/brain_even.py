@@ -2,18 +2,14 @@
 
 # !/usr/bin/env python3
 
-from brain_games.games.even import even_game_question
-from brain_games.games.even import is_even
-from brain_games.games.base_functions import run_game_engine
+from brain_games.games.even import EVEN_GAME_QUESTION
+from brain_games.games.even import even_game_rounds
+from brain_games.base_functions import run_game_engine
 
 
 def main():
     """Add function presents the game."""
-    run_game_engine(is_even(),
-                    is_even(),
-                    is_even(),
-                    even_game_question
-                    )
+    run_game_engine(even_game_rounds, EVEN_GAME_QUESTION)
 
 
 if __name__ == '__main__':

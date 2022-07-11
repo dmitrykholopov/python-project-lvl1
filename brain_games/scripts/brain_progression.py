@@ -2,17 +2,13 @@
 
 # !/usr/bin/env python3
 
-from brain_games.games.progression import progression_game_question
-from brain_games.games.progression import identify_missing_number
-from brain_games.games.base_functions import run_game_engine
+from brain_games.games.progression import PROGRESSION_GAME_QUESTION
+from brain_games.games.progression import prograssion_game_rounds
+from brain_games.base_functions import run_game_engine
 
 
 def main():
-    run_game_engine(identify_missing_number(),
-                    identify_missing_number(),
-                    identify_missing_number(),
-                    progression_game_question
-                    )
+    run_game_engine(prograssion_game_rounds, PROGRESSION_GAME_QUESTION)
 
 
 if __name__ == '__main__':
