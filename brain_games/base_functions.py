@@ -2,7 +2,7 @@
 
 from prompt import string as string
 
-number_of_rounds = 3
+ROUNDS_COUNT = 3
 
 
 def welcome_user():
@@ -21,24 +21,19 @@ def is_right_answer(game_input):
         print('Correct!')
         return True
     else:
-        print(f"'{answer}', is wrong answer ;(. "
-              f"Correct answer was '{right_answer}'."
+        print(f'{answer}, is wrong answer ;(. '
+              f'Correct answer was {right_answer}.'
               )
         return False
 
 
-def run_game_engine(first_round,
-                    second_round,
-                    third_round,
-                    game_question_const
-                    ):
+def run_game_engine(game_rounds, game_question_const):
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game_question_const)
-    rounds = first_round + second_round + third_round
-    for i in range(0, number_of_rounds * 2, 2):
-        if is_right_answer(rounds[i:i + 2]):
+    for round in game_rounds:
+        if is_right_answer(round):
             continue
         else:
-            return print(f"Let's try again, {name}!")
+            return print(f'Let\'s try again, {name}!')
     print(f'Congratulations, {name}!')
