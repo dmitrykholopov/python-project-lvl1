@@ -1,6 +1,5 @@
 .venv
 /dist
-/.github
 /.idea
 **/.DS_Store
 **/__pycache__
