@@ -2,8 +2,6 @@
 
 from random import randint, choice
 
-from brain_games.base_functions import ROUNDS_COUNT
-
 AVAILABLE_OPERATORS = '-+*'
 MIN_OPERAND = 1
 MAX_OPERAND = 20
@@ -23,8 +21,4 @@ def calculate():
     elif operator == '*':
         question = str(operand1) + ' * ' + str(operand2)
         right_answer = str(operand1 * operand2)
-    calculator_output = question, right_answer
-    return calculator_output
-
-
-calc_game_rounds = [calculate() for _ in range(ROUNDS_COUNT)]
+    return question, right_answer, CALC_GAME_QUESTION

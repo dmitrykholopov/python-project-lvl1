@@ -13,7 +13,7 @@ def welcome_user():
 
 
 def is_right_answer(game_input):
-    question, right_answer = game_input
+    question, right_answer, _ = game_input
     print(f'Question: {question}')
     print('Your answer: ', end='')
     answer = input()
@@ -27,12 +27,13 @@ def is_right_answer(game_input):
         return False
 
 
-def run_game_engine(game_rounds, game_question_const):
+def run_game_engine(game_name):
     print('Welcome to the Brain Games!')
     name = welcome_user()
+    _, _, game_question_const = game_name()
     print(game_question_const)
-    for round in game_rounds:
-        if is_right_answer(round):
+    for _ in range(ROUNDS_COUNT):
+        if is_right_answer(game_name()):
             continue
         else:
             return print(f'Let\'s try again, {name}!')

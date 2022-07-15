@@ -2,13 +2,10 @@
 
 from random import randint
 
-from brain_games.base_functions import ROUNDS_COUNT
-
 MINIMUM_RANDOM_NUMBER = 1
 MAXIMUM_RANDOM_NUMBER = 20
-EVEN_GAME_QUESTION = (
-    'Answer "yes" if the number is even, otherwise answer "no".'
-)
+EVEN_GAME_QUESTION = 'Answer "yes" if the number is even,' \
+                     ' otherwise answer "no".'
 
 
 def is_even():
@@ -19,8 +16,4 @@ def is_even():
         right_answer = 'yes'
     else:
         right_answer = 'no'
-    even_output = question, right_answer
-    return even_output
-
-
-even_game_rounds = [is_even() for _ in range(ROUNDS_COUNT)]
+    return question, right_answer, EVEN_GAME_QUESTION

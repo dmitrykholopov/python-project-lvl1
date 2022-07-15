@@ -2,9 +2,7 @@
 
 from random import randint
 
-from brain_games.base_functions import ROUNDS_COUNT
-
-MAXIMUM_GENERATED_ELEMENTS_COUNT = 16     # in fact it's minus 2
+MAXIMUM_GENERATED_ELEMENTS_COUNT = 16     # in fact - it's minus 2
 MINIMUM_ELEMENTS_CUT_COUNT = 5
 MAXIMUM_ELEMENTS_CUT_COUNT = 10
 MINIMUM_STEP = -5
@@ -33,10 +31,4 @@ def identify_missing_number():
     for element in generated_progression:
         question += str(element) + ' '
     question = question.rstrip()
-    progression_output = question, right_answer
-    return progression_output
-
-
-prograssion_game_rounds = [
-    identify_missing_number() for _ in range(ROUNDS_COUNT)
-]
+    return question, right_answer, PROGRESSION_GAME_QUESTION
