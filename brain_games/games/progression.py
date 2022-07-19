@@ -7,10 +7,10 @@ MINIMUM_ELEMENTS_CUT_COUNT = 5
 MAXIMUM_ELEMENTS_CUT_COUNT = 10
 MINIMUM_STEP = -5
 MAXIMUM_STEP = 5
-PROGRESSION_GAME_QUESTION = 'What number is missing in the progression?'
+GAME_QUESTION = 'What number is missing in the progression?'
 
 
-def identify_missing_number():
+def play_the_game():
     progression_step = 0
     initial_elements_cutted_count = randint(
         MINIMUM_ELEMENTS_CUT_COUNT,
@@ -31,4 +31,4 @@ def identify_missing_number():
     for element in generated_progression:
         question += str(element) + ' '
     question = question.rstrip()
-    return question, right_answer, PROGRESSION_GAME_QUESTION
+    return question, right_answer
