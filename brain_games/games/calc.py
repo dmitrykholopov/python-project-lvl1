@@ -13,12 +13,12 @@ def play_the_game():
     operand2 = randint(MIN_OPERAND, MAX_OPERAND)
     operator = choice(AVAILABLE_OPERATORS)
     if operator == '-':
-        question = f'{str(operand1)} - {str(operand2)}'
-        right_answer = f'{str(operand1 - operand2)}'
+        question = f'{operand1} - {operand2}'
+        right_answer = str(operand1 - operand2)
     elif operator == '+':
-        question = f'{str(operand1)} + {str(operand2)}'
-        right_answer = f'{str(operand1 + operand2)}'
+        question = str(operand1 + operand2)
+        right_answer = f'{(operand1 + operand2)}'
     elif operator == '*':
-        question = f'{str(operand1)} * {str(operand2)}'
-        right_answer = f'{str(operand1 * operand2)}'
+        question = str(operand1 * operand2)
+        right_answer = f'{(operand1 * operand2)}'
     return question, right_answer
