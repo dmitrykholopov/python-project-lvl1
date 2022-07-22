@@ -2,7 +2,7 @@
 
 from random import randint, choice
 
-AVAILABLE_OPERATORS = '-+*'
+AVAILABLE_OPERATORS = ['-', '+', '*']
 MIN_OPERAND = 1
 MAX_OPERAND = 20
 GAME_QUESTION = 'What is the result of the expression?'
@@ -16,9 +16,9 @@ def play_the_game():
         question = f'{operand1} - {operand2}'
         right_answer = str(operand1 - operand2)
     elif operator == '+':
-        question = str(operand1 + operand2)
-        right_answer = f'{(operand1 + operand2)}'
+        question = f'{operand1} + {operand2}'
+        right_answer = str(operand1 + operand2)
     elif operator == '*':
-        question = str(operand1 * operand2)
-        right_answer = f'{(operand1 * operand2)}'
+        question = f'{operand1} * {operand2}'
+        right_answer = str(operand1 * operand2)
     return question, right_answer
