@@ -19,13 +19,13 @@ def run_game_engine(game_name):
     for _ in range(ROUNDS_COUNT):
         question, right_answer = game_name.play_the_game()
         print(f'Question: {question}')
-        answer = string('Your answer: ' )
+        answer = string('Your answer: ')
         if right_answer == answer:
             print('Correct!')
             continue
         else:
             print(f'{answer}, is wrong answer ;(. '
-              f'Correct answer was {right_answer}.'
-              )
+                  f'Correct answer was {right_answer}.'
+                  )
             return print(f'Let\'s try again, {name}!')
     print(f'Congratulations, {name}!')
