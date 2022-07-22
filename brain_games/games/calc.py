@@ -8,7 +8,7 @@ MAX_OPERAND = 20
 GAME_QUESTION = 'What is the result of the expression?'
 
 
-def make_round_data():
+def get_round_data():
     operand1 = randint(MIN_OPERAND, MAX_OPERAND)
     operand2 = randint(MIN_OPERAND, MAX_OPERAND)
     operator = choice(AVAILABLE_OPERATORS)

@@ -8,7 +8,7 @@ MAXIMUM_RANDOM_NUMBER = 50
 GAME_QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
-def make_round_data():
+def get_round_data():
     """Add main function with game logic."""
     first_number = randint(MINIMUM_RANDOM_NUMBER, MAXIMUM_RANDOM_NUMBER)
     second_number = randint(MINIMUM_RANDOM_NUMBER, MAXIMUM_RANDOM_NUMBER)
