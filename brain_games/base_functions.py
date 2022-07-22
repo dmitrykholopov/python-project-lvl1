@@ -1,6 +1,6 @@
 """Make a docstring for a public module."""
 
-from prompt import string as string
+from prompt import string
 
 ROUNDS_COUNT = 3
 
@@ -12,28 +12,20 @@ def welcome_user():
     return name
 
 
-def is_right_answer(game_input):
-    question, right_answer = game_input
-    print(f'Question: {question}')
-    print('Your answer: ', end='')
-    answer = input()
-    if right_answer == answer:
-        print('Correct!')
-        return True
-    else:
-        print(f'{answer}, is wrong answer ;(. '
-              f'Correct answer was {right_answer}.'
-              )
-        return False
-
-
 def run_game_engine(game_name):
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game_name.GAME_QUESTION)
     for _ in range(ROUNDS_COUNT):
-        if is_right_answer(game_name.play_the_game()):
+        question, right_answer = game_name.play_the_game()
+        print(f'Question: {question}')
+        answer = string('Your answer: ' )
+        if right_answer == answer:
+            print('Correct!')
             continue
         else:
+            print(f'{answer}, is wrong answer ;(. '
+              f'Correct answer was {right_answer}.'
+              )
             return print(f'Let\'s try again, {name}!')
     print(f'Congratulations, {name}!')
