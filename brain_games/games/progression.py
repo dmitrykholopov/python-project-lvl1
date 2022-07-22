@@ -10,7 +10,7 @@ MAXIMUM_STEP = 5
 GAME_QUESTION = 'What number is missing in the progression?'
 
 
-def play_the_game():
+def make_round_data():
     progression_step = 0
     initial_elements_cutted_count = randint(
         MINIMUM_ELEMENTS_CUT_COUNT,

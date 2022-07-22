@@ -8,7 +8,7 @@ GAME_QUESTION = 'Answer "yes" if the number is even,' \
                 ' otherwise answer "no".'
 
 
-def play_the_game():
+def make_round_data():
     """Add main function with game logic."""
     random_number = randint(MINIMUM_RANDOM_NUMBER, MAXIMUM_RANDOM_NUMBER)
     question = str(random_number)

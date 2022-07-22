@@ -8,7 +8,7 @@ GAME_QUESTION = 'Answer "yes" if the number is prime,' \
                 ' otherwise answer "no".'
 
 
-def play_the_game():
+def make_round_data():
     random_number = randint(MINIMUM_RANDOM_NUMBER, MAXIMUM_RANDOM_NUMBER)
     question = str(random_number)
     right_answer = 'yes'

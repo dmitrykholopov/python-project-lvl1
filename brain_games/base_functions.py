@@ -17,7 +17,7 @@ def run_game_engine(game_name):
     name = welcome_user()
     print(game_name.GAME_QUESTION)
     for _ in range(ROUNDS_COUNT):
-        question, right_answer = game_name.play_the_game()
+        question, right_answer = game_name.make_round_data()
         print(f'Question: {question}')
         answer = string('Your answer: ')
         if right_answer == answer:
