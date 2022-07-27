@@ -12,12 +12,12 @@ def welcome_user():
     return name
 
 
-def run_game_engine(game_name):
+def run_game_engine(game):
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    print(game_name.GAME_QUESTION)
+    print(game.GAME_QUESTION)
     for _ in range(ROUNDS_COUNT):
-        question, right_answer = game_name.get_round_data()
+        question, right_answer = game.get_round_data()
         print(f'Question: {question}')
         answer = string('Your answer: ')
         if right_answer == answer:
@@ -27,5 +27,7 @@ def run_game_engine(game_name):
             print(f'{answer}, is wrong answer ;(. '
                   f'Correct answer was {right_answer}.'
                   )
-            return print(f'Let\'s try again, {name}!')
+            print(f'Let\'s try again, {name}!')      
+            return
     print(f'Congratulations, {name}!')
+
