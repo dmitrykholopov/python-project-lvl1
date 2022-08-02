@@ -10,7 +10,6 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.9"
-colorama = "^0.4.4"
 prompt = "^0.4.1"
 
 [tool.poetry.dev-dependencies]

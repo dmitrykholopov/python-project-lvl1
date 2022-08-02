@@ -1,4 +1,4 @@
-"""Make a docstring for a public module."""
+"""Module generating data for the gcd game"""
 
 from random import randint
 from math import gcd

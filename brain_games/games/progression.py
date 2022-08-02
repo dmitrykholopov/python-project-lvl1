@@ -1,29 +1,42 @@
-"""Make a docstring for a public module."""
+"""Module generating data for the progression game"""
 
 from random import randint
 
-MAXIMUM_GENERATED_ELEMENTS_COUNT = 16     # in fact - it's minus 2
-MINIMUM_ELEMENTS_CUT_COUNT = 5
-MAXIMUM_ELEMENTS_CUT_COUNT = 10
-MINIMUM_STEP = -5
-MAXIMUM_STEP = 5
+PROGRESSION = {
+    'min_length': 10,
+    'max_length': 15,
+    'min_first_element': 30,
+    'max_first_element': 50,
+    'min_step': 1,
+    'max_step': 10
+}
 GAME_QUESTION = 'What number is missing in the progression?'
 
 
+def get_progression(progression):
+    progression_step = randint(
+        progression['min_step'],
+        progression['max_step']
+    )
+    progression_first_elem = randint(
+        progression['min_first_element'],
+        progression['max_first_element']
+    )
+    progression_elements_count = randint(
+        progression['min_length'],
+        progression['max_length']
+    )
+    return [i for i in range(
+            progression_first_elem,
+            progression_first_elem
+            + progression_elements_count
+            * progression_step,
+            progression_step
+            )]
+
+
 def get_round_data():
-    progression_step = 0
-    initial_elements_cutted_count = randint(
-        MINIMUM_ELEMENTS_CUT_COUNT,
-        MAXIMUM_ELEMENTS_CUT_COUNT
-    )
-    while progression_step == 0:
-        progression_step = randint(MINIMUM_STEP, MAXIMUM_STEP)
-    generated_progression = [
-        i * progression_step for i in range(1, MAXIMUM_GENERATED_ELEMENTS_COUNT)
-    ]
-    generated_progression = (
-        generated_progression[initial_elements_cutted_count:]
-    )
+    generated_progression = get_progression(PROGRESSION)
     hidden_element = randint(0, len(generated_progression) - 1)
     right_answer = str(generated_progression.pop(hidden_element))
     generated_progression.insert(hidden_element, '..')

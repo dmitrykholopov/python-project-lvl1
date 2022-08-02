@@ -1,4 +1,4 @@
-"""Make a docstring for a public module."""
+""" Module with game logic and its engine """
 
 from prompt import string
 
@@ -6,13 +6,14 @@ ROUNDS_COUNT = 3
 
 
 def welcome_user():
-    """Add function, that ask name & welcomes user."""
+    """ Add function, that ask name & welcomes user. """
     name = string('May I have your name? ')
     print(f'Hello, {name}!')
     return name
 
 
 def run_game_engine(game):
+    """ Add function with game logic and its engine. """
     print('Welcome to the Brain Games!')
     name = welcome_user()
     print(game.GAME_QUESTION)

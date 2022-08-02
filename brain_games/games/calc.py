@@ -1,4 +1,4 @@
-"""Make a docstring for a public module."""
+"""Module generating data for the calc game"""
 
 from random import randint, choice
 
