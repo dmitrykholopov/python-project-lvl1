@@ -14,9 +14,9 @@ def get_progression(min_max_length,
                     min_max_first_element,
                     min_max_step
                    ):
-    progression_step = randint(min_max_step)
-    progression_first_elem = randint(min_max_first_element)
-    progression_elements_count = randint(min_max_length)
+    progression_step = randint(*min_max_step)
+    progression_first_elem = randint(*min_max_first_element)
+    progression_elements_count = randint(*min_max_length)
 
     return [i for i in range(
             progression_first_elem,
